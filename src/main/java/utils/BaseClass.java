@@ -29,7 +29,7 @@ public class BaseClass {
 		String response = res.getBody().asString();
 
 		js = new JsonPath(response);
-		return js.get("");
+		return js.get("checkforPull");
 	}
 
 	public String getBaseEndPoint(String str) throws IOException {
